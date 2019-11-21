@@ -32,6 +32,7 @@ $(".btn").on('click', function() {
         }
     ]).then(options => {
         var authFlag = false;
+        options = options.value;
         if (options[1] == "author") {
             //Auth query
             authFlag = true;
